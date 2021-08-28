@@ -37,155 +37,193 @@
               ></label>
             </div>
             <div class="col">
-              <input type="text" id="searchInput" class="form-control-plaintext" autocomplete="off" placeholder="Change City Here"/>
-              
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control-plaintext"
+                autocomplete="off"
+                placeholder="Change City Here"
+              />
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-outline-light" id="searchClick">
-                  <i class="fas fa-search"></i>
+              <button
+                type="submit"
+                class="btn btn-outline-light"
+                id="searchClick"
+              >
+                <i class="fas fa-search"></i>
               </button>
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-light" id="searchCurrent">
-                <p> <strong>Current</strong></p>
+                <p><strong>Current</strong></p>
               </button>
             </div>
           </form>
         </div>
         <!-- start cards-->
         <div class="row">
-          <div class="card col">         
+          <div class="card col">
             <br />
-              <h3 id="currentCity"></h3>
-        <p class="card-text" id="current-date"></p>
-        <ul class="weather-day">
-            <li><h1>
-            <img id="main-icon"
-            height="55px"
-     src="media-dark/partly sunny.svg"
-     alt="cloudy">
-            </h1>
-        </li>
-        <li>
-        <h2 id="currentWeather"></h2></li>
-        <li><p>
-          <span class="units">
-            <a ref="#" id="celsius">°C</a> |
-          </span>
-            <br />
-            <br />
-            <strong>Humidity:</strong><span id= humidity></span>
-            <br />
-            <strong>Wind:</strong><span id= windSpeed></span>
-            <br /><span class="description-style"id=description></span> 
-</p></li>
-        </ul>
-            
+            <h3 id="currentCity"></h3>
+            <p class="card-text" id="current-date"></p>
+            <ul class="weather-day">
+              <li>
+                <h1>
+                  <img
+                    id="main-icon"
+                    height="55px"
+                    src="media-dark/partly sunny.svg"
+                    alt="cloudy"
+                  />
+                </h1>
+              </li>
+              <li>
+                <h2 id="currentWeather"></h2>
+              </li>
+              <li>
+                <p>
+                  <span class="units"> <a ref="#" id="celsius">°C</a> | </span>
+                  <br />
+                  <br />
+                  <strong>Humidity:</strong><span id="humidity"></span>
+                  <br />
+                  <strong>Wind:</strong><span id="windSpeed"></span> <br /><span
+                    class="description-style"
+                    id="description"
+                  ></span>
+                </p>
+              </li>
+            </ul>
           </div>
           <div class="col-sm-6">
             <div class="card-header">
               <div class="weather-week">
-  <div class="row">
-    <div class="col">
-      <span class="day"> This week </span>
-    </div>
- 
-</div>
-<div class="weather-week">
-  <div class="row">
-    <div class="col-md-4">
-      <span class="day"> Saturday</span>
-    </div>
-    <div class="col-md-4">
-      <span class="weather"> <img id="main-icon"
-            height="16px"
-     src="media-light/cloudy.svg"
-     alt="cloudy">
-    </span>
-    </div>
-    <div class="col-md-4">
-      <span class="temperature"> 22° 11° </span>
-    </div>
-  </div>
-  <hr />
-</div>
+                <div class="row">
+                  <div class="col">
+                    <span class="day"> This week </span>
+                  </div>
+                </div>
+                <div class="weather-week">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="day"> Saturday</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="weather">
+                        <img
+                          id="main-icon"
+                          height="16px"
+                          src="media-light/cloudy.svg"
+                          alt="cloudy"
+                        />
+                      </span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="temperature"> 22° 11° </span>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
 
-<div class="weather-week">
-  <div class="row">
-    <div class="col-md-4">
-      <span class="day"> Sunday</span>
-    </div>
-    <div class="col-md-4">
-      <span class="weather"><img id="main-icon"
-            height="20px"
-     src="media-light/raining.svg"
-     alt="cloudy"> </span>
-    </div>
-    <div class="col-md-4">
-      <span class="temperature"> 25° 12° </span>
-    </div>
-  </div>
-  <hr />
-</div>
-<div class="weather-week">
-  <div class="row">
-   <div class="col-md-4">
-      <span class="day"> Tuesday</span>
-    </div>
-    <div class="col-md-4">
-      <span class="weather"> <img id="main-icon"
-            height="20px"
-     src="media-light/partly sunny.svg"
-     alt="cloudy"> </span>
-    </div>
-    <div class="col-md-4">
-      <span class="temperature"> 24° 12° </span>
-    </div>
-  </div>
-  <hr />
-</div>
-<div class="weather-week">
-  <div class="row">
-    <div class="col-md-4">
-      <span class="day"> Wednesday</span>
-    </div>
-    <div class="col-md-4">
-      <span class="weather"> <img id="main-icon"
-            height="20px"
-     src="media-light/showers.svg"
-     alt="cloudy"> </span>
-    </div>
-    <div class="col-md-4">
-      <span class="temperature"> 24° 12° </span>
-    </div>
-  </div>
-  <hr />
-</div>
+                <div class="weather-week">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="day"> Sunday</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="weather"
+                        ><img
+                          id="main-icon"
+                          height="20px"
+                          src="media-light/raining.svg"
+                          alt="cloudy"
+                        />
+                      </span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="temperature"> 25° 12° </span>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div class="weather-week">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="day"> Tuesday</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="weather">
+                        <img
+                          id="main-icon"
+                          height="20px"
+                          src="media-light/partly sunny.svg"
+                          alt="cloudy"
+                        />
+                      </span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="temperature"> 24° 12° </span>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div class="weather-week">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="day"> Wednesday</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="weather">
+                        <img
+                          id="main-icon"
+                          height="20px"
+                          src="media-light/showers.svg"
+                          alt="cloudy"
+                        />
+                      </span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="temperature"> 24° 12° </span>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
 
-<div class="weather-week">
-  <div class="row">
-    <div class="col-md-4">
-      <span class="day"> Wednesday</span>
-    </div>
-    <div class="col-md-4">
-      <span class="weather"> <img id="main-icon"
-            height="20px"
-     src="media-light/partly sunny.svg"
-     alt="cloudy"> </span>
-    </div>
-    <div class="col-md-4">
-      <span class="temperature"> 24° 12° </span>
-    </div>
-  </div>
-  <hr />
-</div>
+                <div class="weather-week">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="day"> Wednesday</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="weather">
+                        <img
+                          id="main-icon"
+                          height="20px"
+                          src="media-light/partly sunny.svg"
+                          alt="cloudy"
+                        />
+                      </span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="temperature"> 24° 12° </span>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+              </div>
             </div>
           </div>
+          <!-- end card day-->
+          <!-- end main form-->
         </div>
-        <!-- end card day-->
-        
-        <!-- end main form-->
       </div>
+      <p class="footer">
+        <a href="https://github.com/Molserram/my-weather-app"
+          >Open Source Code</a
+        >
+        by Molserram
+      </p>
     </div>
     <script src="source/code.js"></script>
   </body>

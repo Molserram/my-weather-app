@@ -158,10 +158,22 @@ ul {
 }
 
 a:hover {
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 }
 
 .description-style {
   text-transform: capitalize;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.6);
 }
