@@ -51,7 +51,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
 
   let day = days[date.getDay()]; // 0 and 6
