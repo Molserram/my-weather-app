@@ -31,6 +31,11 @@ function getCityTemperature(response) {
   )} km/h`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+  let icon = response.data.weather[0].icon;
+  let iconUrl = `<img src="icons/dark/${icon}.png">`;
+  document.querySelector("#main-icon").innerHTML = iconUrl;
+
+  console.log(response);
 }
 
 // Date format

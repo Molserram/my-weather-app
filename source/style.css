@@ -9,18 +9,19 @@ h2,
 h3 {
   font-family: "Poppins", sans-serif;
   color: rgba(0, 0, 0, 0.74);
+  margin: 0px;
 }
 
 h1 {
   font-weight: 600;
-  line-height: 65px;
+  line-height: 60px;
   font-size: 60px;
   color: black;
 }
 
 h2 {
   font-weight: 600;
-  line-height: 45px;
+  margin: 0px;
   font-size: 40px;
 }
 
@@ -100,6 +101,11 @@ div.row {
   vertical-align: middle;
 }
 
+.main-icon {
+  height: 50%;
+  padding: 20px 0px 5px 0px;
+}
+
 .weather-cards {
   list-style: none;
   margin: 0 auto;
@@ -109,8 +115,8 @@ div.row {
 
 .weather-day {
   list-style: none;
-  padding: 0.4rem 0.4rem;
-  margin: 5px auto;
+  padding: 0px;
+  margin: 0px;
   display: inline;
 }
 
